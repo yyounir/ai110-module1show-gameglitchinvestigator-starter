@@ -25,27 +25,36 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [x] Describe the game's purpose.
+- [x] Detail which bugs you found.
+- [x] Explain what fixes you applied.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters a guess of 50
+2. Game returns "Too High"
+3. User enters a guess of 75
+4. Game returns "Too Low"
+5. Score updates correctly after each guess
+6. When the user guesses correctly, the game ends and the game congradulates the user.
 
-**Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
-
+**Screenshot** ![Screenshot.jpg](Screenshot.jpg)
 ## 🧪 Test Results
 
 ```
 # Paste your pytest output here, e.g.:
 # pytest tests/
+=========================================================== test session starts ===========================================================
+platform win32 -- Python 3.13.14, pytest-9.1.1, pluggy-1.6.0
+rootdir: C:\Users\yyins\Projects\AI110\ai110-module1show-gameglitchinvestigator-starter
+plugins: anyio-4.12.1
+collected 6 items                                                                                                                          
+
+tests\test_game_logic.py ......                                                                                                      [100%]
+
+============================================================ 6 passed in 0.07s ============================================================
 # ========================= X passed in 0.XXs =========================
 ```
 
